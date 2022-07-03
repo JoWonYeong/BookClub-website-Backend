@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모임 소개</title>
+    <%- include('layouts/scripts.ejs'); -%>
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/introduceClub.css">
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+
+        <div class="contents">
+            <div class="introduction">
+                <div class="intro_text">
+                    <div class="intro_title">소개</div>
+                    <div class="intro_about">
+                        저희 추리소설 모임은 추리소설을 사랑하는 사람들이 책을 추천하고 대여해주는 모임입니다. <br />
+                        한달에 한번씩 만나 선정한 책의 앞부분을 읽고 뒷 내용을 추리해보고 의논하는 활동을 합니다. 또한, 원하는 책을 예약하여 소모임 아지트에서 대여하실 수 있습니다.
+                    </div>
+                </div>
+                <div class="intro_img">
+                    <img src="./images/club1.png" alt="">
+                    <img src="./images/club2.png" alt="">
+                    <img src="./images/club3.png" alt="">
+                </div>
+            </div>
+
+            <div class="location">
+                <div class="loc_title">위치</div>
+                <div class="loc_map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51715.47275763461!2d128.57821919502663!3d35.892699500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e1745dca7c43%3A0x9b02c96276e1e8c1!2z67aB7Lm07Y6Y66eI7J24!5e0!3m2!1sko!2skr!4v1650730443099!5m2!1sko!2skr"
+                        width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>

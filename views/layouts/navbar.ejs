@@ -1,0 +1,26 @@
+<div class="top">
+    <ul class="nav_user">
+        <% if(loggedIn){ %>
+            <li><a href="/reports/new">독후감 작성</a></li>
+            <li><a href="/rentalBook">책 대여</a></li>
+            <li><a href="/auth/logout">로그아웃</a></li>
+            <% } %>
+                <% if(!loggedIn){ %>
+                    <li><a href="/auth/login">로그인</a></li>
+                    <li><a href="/auth/register">회원가입</a></li>
+                    <% } %>
+    </ul>
+</div>
+<nav class="navbar">
+    <div class="nav_home">
+        <a href="/">
+            <i class="fa-solid fa-book-open"></i>
+            <strong>추리소설 소모임</strong>
+        </a>
+    </div>
+    <ul class="nav_menu">
+        <li id="menu1"><a href="/introduceClub">모임소개</a></li>
+        <li id="menu2"><a href="/bestBook">이달의 책</a></li>
+        <li id="menu3"><a href="/reports">독후감상</a></li>
+    </ul>
+</nav>

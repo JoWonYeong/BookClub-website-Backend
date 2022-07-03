@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독후감상</title>
+    <%- include('layouts/scripts.ejs'); -%>
+        <script src="./js/bestBook.js"></script>
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/reports.css">
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+
+        <div class="contents">
+            <div class="script">
+                클릭하시면 전체 독후감상문을 보실 수 있습니다.
+            </div>
+            <% for(var i=0; i< bookreports.length; i++){ %>
+                <a href="/reports/<%= bookreports[i]._id %>">
+                    <div class="report">
+                        <div class="report_info">
+                            <div class="title">
+                                <%= bookreports[i].title %>
+                            </div>
+                            <div class="nickname">
+                                작성자: <%= bookreports[i].nickname %>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <%= bookreports[i].body %>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+        </div>
+
+        <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>

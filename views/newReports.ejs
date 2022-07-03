@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독후감상</title>
+    <%- include('layouts/scripts.ejs'); -%>
+        <script src="./js/bestBook.js"></script>
+        <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+
+        <div class="contents">
+            <div class="info" id="report">
+                <div class="info_title">
+                    독후감 작성
+                </div>
+                <hr>
+                <form class="info_set" id="" action="/reports/store" method="POST">
+                    <label>제목</label>
+                    <input type="text" class="setTitle" id="title" name="title"><br>
+                    <textarea rows="10" cols="60" placeholder="독후감을 작성해주세요" class="setText" id="body"
+                        name="body"></textarea>
+                    <div class="send">
+                        <button id="submitButton" type="submit">등록</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>

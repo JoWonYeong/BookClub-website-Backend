@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <%- include('layouts/scripts.ejs'); -%>
+        <script src="./js/bestBook.js"></script>
+        <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+
+        <div class="contents">
+            <div class="info">
+                <div class="info_title">
+                    회원가입 정보 입력
+                </div>
+                <hr>
+                <form class="info_set" id="newUser" action="/users/register" method="POST">
+                    <label>이름 (필수)</label>
+                    <input type="text" class="set" id="name" name="name"> <br>
+
+                    <label>닉네임 (필수)</label>
+                    <input type="text" class="set" id="nickname" name="nickname"> <br>
+
+                    <label>전화번호</label>
+                    <input type="text" class="set" placeholder=" xxx-xxxx-xxxx" id="phoneNumber" name="phoneNumber">
+                    <br>
+
+                    <label>아이디 (필수)</label>
+                    <input type="text" class="set" id="id" name="id"> <br>
+
+                    <label>비밀번호 (필수)</label>
+                    <input type="password" class="set" id="password" name="password">
+
+                    <div class="send">
+                        <button id="submitButton" type="submit">회원가입</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>

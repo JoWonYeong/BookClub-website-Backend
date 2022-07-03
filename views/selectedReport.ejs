@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독후감상</title>
+    <%- include('layouts/scripts.ejs'); -%>
+        <script src="./js/bestBook.js"></script>
+        <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/reports.css">
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+
+        <div class="contents">
+            <div class="report">
+                <div class="report_info">
+                    <div class="title">
+                        <%= bookreport.title %>
+                    </div>
+                    <div class="nickname">
+                        작성자: <%= bookreport.nickname %>
+                    </div>
+                </div>
+                <div class="body_selected">
+                    <%= bookreport.body %>
+                </div>
+                <div class="report_control">
+                    <div class="report_icon">
+                        <a href="/reports">
+                            <i class="fa-solid fa-backward"></i>
+                        </a>
+                    </div>
+                    <% if(match){ %>
+                        <div class="report_icon">
+                            <a href="/reports/delete/<%= bookreport._id %>">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </a>
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+
+        <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>

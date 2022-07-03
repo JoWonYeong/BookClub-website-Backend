@@ -1,0 +1,49 @@
+.nav_menu li {
+    padding-bottom: 8px;
+}
+
+.nav_menu li:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #e2f1f8;
+    transition: border-bottom 0.3s ease;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column;
+}
+
+.send {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.send input {
+    width: 80px;
+    height: 35px;
+    font-size: medium;
+}
+
+.rent {
+    /* display: none; */
+    background-color: #e2f1f8;
+    color: #494949;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.rent .title {
+    font-weight: 600;
+    font-size: large;
+}
+
+.rent img {
+    border: 2px solid white;
+    width: 150px;
+    height: 200px;
+    margin: 5px 10px;
+}

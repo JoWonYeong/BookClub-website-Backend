@@ -1,0 +1,79 @@
+.nav_menu li {
+    padding-bottom: 8px;
+}
+
+.nav_menu li:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #e2f1f8;
+    transition: border-bottom 0.3s ease;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column;
+}
+
+.info {
+    margin: 20px;
+    color: #494949;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#report {
+    width: 700px;
+}
+
+.info_title {
+    background-color: #dde4e7;
+    font-size: 28px;
+    font-weight: 550;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.info_set {
+    /* height: 200px; */
+    background-color: #dde4e7;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.setTitle {
+    width: 170px;
+    height: 27px;
+    font-size: 20px;
+}
+
+.setText {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.set {
+    width: 150px;
+    height: 23px;
+}
+
+.send {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.send button {
+    width: 80px;
+    height: 35px;
+    font-size: medium;
+}

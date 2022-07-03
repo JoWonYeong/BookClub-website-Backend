@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이달의 책</title>
+    <%- include('layouts/scripts.ejs'); -%>
+        <script src="./js/bestBook.js"></script>
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/bestBook.css">
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+        <div class="contents">
+            <i class="fa-solid fa-angle-left" id="prevBtn"></i>
+            <div class="window">
+                <div class="window_text">
+                    <div class="text active">
+                        <h2>용의자 X의 헌신</h2>
+                        지은이: 히가시노 게이고 <br /><br />
+                        <strong>
+                            "히가시노 게이고 작가의 명성은 익히 들어 보았다. 왜 이름 있는 작가인지 알려주는 책"
+                        </strong>
+                    </div>
+                    <div class="text">
+                        <h2>백광</h2>
+                        지은이: 렌죠 미키히코<br /><br />
+                        <strong>
+                            "어린 소녀의 죽음을 둘러싼 반전의 반전을 따라가려면 섣부른 판단을 접어둬야 한다."
+                        </strong>
+                    </div>
+                    <div class="text">
+                        <h2>가면산장 살인사건</h2>
+                        지은이: 히가시노 게이고 <br /><br />
+                        <strong>
+                            "반전으로 유명한 책이라고 하기엔 중반 이후에는 범인의 예상이 가능한 점은 아쉬웠다."
+                        </strong>
+                    </div>
+                    <div class="text">
+                        <h2>괴짜탐정의 사건노트3</h2>
+                        지은이: 하야미네 가오루 <br /><br />
+                        <strong>
+                            "'괴짜탐정의 사건노트' 시리즈 중 가장 재밌는 에피소드라고 꼽혀진다. 추리소설 입문자들에게 강추"
+                        </strong>
+                    </div>
+                </div>
+                <div class="window_img">
+                    <img src="./images/best1.png" alt="" class="img active">
+                    <img src="./images/best2.png" alt="" class="img">
+                    <img src="./images/best3.png" alt="" class="img">
+                    <img src="./images/best4.png" alt="" class="img">
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-right" id="nextBtn"></i>
+        </div>
+
+        <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+#menu3 {
+    font-weight: 700;
+    border-bottom: 3px solid #e2f1f8;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+}
+
+.script {
+    color: #e2f1f8;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.report {
+    width: 800px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #e2f1f8;
+    border-radius: 20px;
+}
+
+.report_info {
+    width: 800px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #494949;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nickname {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.body {
+    font-size: 21px;
+    font-weight: 600;
+    height: 170px;
+    overflow: hidden;
+    color: #62757f;
+}
+
+.body_selected {
+    font-size: 21px;
+    font-weight: 600;
+    /* height: 170px; */
+    color: #62757f;
+}
+
+.report_control {
+    width: 800px;
+    font-size: 34px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.report_icon {
+    margin-left: 15px;
+}
+
+.report_icon i {
+    color: #62757f;
+}
