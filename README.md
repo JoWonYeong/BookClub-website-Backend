@@ -2,4 +2,4 @@
  Upgrade BookClub-website using Node.js
 
 web hosting using heroku
-https://bookclub-wswy.herokuapp.com/
+https://bookclub-web-wswy.herokuapp.com/
